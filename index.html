@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+     <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #fff;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+    }
+
+    a {
+      color: #c59d5f;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: url('images/fast-woodfired-pizza.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.55);
+      z-index: 0;
+    }
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .btn {
+      background-color: #c59d5f;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #b4884c;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .open-status {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #c59d5f;
+    }
+
+    #about {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+        padding: 3rem 20px;
+        background-color: #fff7f0;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .about-content {
+        flex: 1 1 500px;
+    }
+
+    #about h2 {
+        font-size: 2.5rem;
+    }
+
+    #about p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    #about blockquote {
+        font-style: italic;
+        color: #666;
+        padding-left: 1rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .quote-author {
+        display: block;
+        font-weight: bold;
+        margin-top: 0.5rem;
+    }
+
+    .about-image img {
+        width: 100%;
+        border-radius: 10px;
+        max-width: 400px;
+        object-fit: cover;
+    }
+
+    #menu {
+      background-color: #f9f9f9;
+      padding: 3rem 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #menu h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .menu-category {
+        margin-bottom: 2.5rem;
+        text-align: left;
+    }
+
+    .menu-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .menu-column {
+      flex: 1 1 45%;
+      min-width: 280px;
+    }
+    .menu-column h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #444;
+      border-bottom: 2px solid #c59d5f;
+      padding-bottom: 0.5rem;
+    }
+
+    .menu-column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .menu-column li {
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.8rem;
+      font-size: 1.1rem;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .menu-column strong {
+      color: #222;
+    }
+
+    .menu-column span {
+        margin-left: auto;
+        font-weight: bold;
+        color: #c59d5f;
+    }
+
+    
+    .menu-note {
+        font-size: 1rem;
+        color: #666;
+        margin-top: 2rem;
+    }
+
+    #contact {
+      text-align: center;
+      padding: 3rem 20px;
+    }
+    #contact p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+    #contact .btn {
+      background-color: #c59d5f;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+    #contact .btn:hover {
+      background-color: #b4884c;
+    }
+
+    .map-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #testimonials {
+        background-color: #fff7f0;
+        padding: 3rem 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    #testimonials h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-carousel {
+        max-width: 700px;
+        margin: auto;
+        position: relative;
+    }
+
+    .testimonial {
+        display: none;
+        padding: 1.5rem;
+        background-color: #fff;
+        border-left: 4px solid #c59d5f;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        border-radius: 8px;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .testimonial.active {
+        display: block;
+    }
+
+    .testimonial blockquote {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #444;
+      margin: 1rem 0;
+    }
+
+    .testimonial cite {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .stars {
+        width: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .source-badge {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #555;
+        background: #eee;
+        padding: 0.3rem 0.7rem;
+        border-radius: 6px;
+    }
+
+    .source-badge.google {
+        background-color: #f1f6ff;
+        color: #1a73e8;
+    }
+
+    .testimonial-controls {
+        margin-top: 1rem;
+    }
+
+    .testimonial-controls button {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #c59d5f;
+        cursor: pointer;
+        margin: 0 0.5rem;
+        transition: color 0.2s ease;
+    }
+
+    .testimonial-controls button:hover {
+        color: #b4884c;
+    }
+
+    footer {
+      background-color: #222;
+      color: #bbb;
+      text-align: center;
+      padding: 1.5rem 20px;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      margin-bottom: 50px;
+    }
+
+    .mobile-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-around;
+        background-color: #c59d5f;
+        padding: 0.75rem 1rem;
+        border-top: 1px solid #b4884c;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+    .mobile-cta a {
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: opacity 0.2s ease;
+    }
+
+    .mobile-cta a:hover {
+        opacity: 0.8;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+        .mobile-cta {
+            display: none;
+        }
+
+        footer {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1.1rem;
+      }
+      .menu-grid {
+        flex-direction: column;
+      }
+      .menu-column {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+    <h1>Authentic Italian Comfort Food in Hawthorne, NJ</h1>
+    <p>Family-owned since 1995. Handmade pastas, wood-fired pizzas, and warm hospitality.</p>
+    <div class="hero-buttons">
+        <a href="#menu" class="btn">See Our Menu</a>
+        <a href="tel:1234567890" class="btn">Call to Order/Reserve</a>
+    </div>
+    <p class="open-status">Open Now - Closes at 9:00 PM</p>
+  </header>
+
+  <section class="menu-column" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-category">
+        <h3>Starters</h3>
+        <ul id="starters">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Entrees</h3>
+        <ul id="entrees">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Drinks & Desserts</h3>
+        <ul id="drinks-desserts">
+
+        </ul>
+    </div>
+    <a href="tel:1234567890" class="btn">Call Now to Order</a>
+    <p class="menu-note">
+        View our full menu <a href="menu.pdf" target="_blank">here</a> or ask in-store for daily specials.
+    </p>
+  </section>
+
+  <section id="about">
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+            We’re a family-owned Italian restaurant serving Hawthorne since 1995. Our recipes are passed down through generations and made fresh daily. Whether you’re here for a casual night out or celebrating something special, we make you feel at home.
+        </p>
+        <p>
+            Every dish is made from scratch with fresh, high-quality ingredients — the same way Nonna used to cook. Whether you're dining in, picking up, or ordering for a celebration, we treat every guest like family.
+        </p>
+        <blockquote>
+        “Good food brings people together — and that’s what we’re here for.”<br>
+        <span class="quote-author">– Salvatore, Owner & Chef</span>
+        </blockquote>
+    </div>
+    
+    <!-- Optional: Photo of Owner or Restaurant -->
+    <div class="about-image">
+        <img src="images/restaurant-owner.jpg" alt="Our Owner [Name]" loading="lazy">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Hours</h2>
+    <p>
+        <strong>Address:</strong>
+        123 Main Street, Hawthorne, NJ <br/>
+        <a href="https://maps.google.com" target="_blank">Get Directions</a>
+    </p>
+    <p>
+        <strong>Phone:</strong>
+        <a href="tel:1234567890">(123) 456-7890</a>
+    </p>
+    <p>
+        <strong>Open Daily:</strong>
+        11:00 AM - 9:00 PM
+    </p>
+    <a href="tel:1234567890" class="btn">Call Now to Order</a>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.8052695235425!2d-74.15700099999999!3d40.949246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c303b4a0ef3bcb%3A0xf8c09b10d1b709f5!2sHawthorne%2C%20NJ%2007506%2C%20USA!5e0!3m2!1sen!2sus!4v1721040000000!5m2!1sen!2sus" 
+        width="100%" height="300" style="border:0; margin-top: 2rem; border-radius: 8px;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-carousel">
+        <div class="testimonial active">
+            <img src="star-rating.svg" alt="5 stars" class="stars">
+            <blockquote>“Amazing food and super friendly staff. The best Italian in the area!”</blockquote>
+            <cite>– Sarah J.</cite>
+            <div class="source-badge google">Google Review</div>
+        </div>
+        <div class="testimonial">
+            <img src="star-rating.svg" alt="5 stars" class="stars">
+            <blockquote>“Their tiramisu is to die for. I order it every time.”</blockquote>
+            <cite>- Mark T.</cite>
+            <div class="source-badge">Yelp</div>
+        </div>
+        <div class="testimonial">
+            <img src="star-rating.svg" alt="5 stars" class="stars">
+            <blockquote>“Cozy, authentic, and the pizza is next level. Reminds me of home in Naples.”</blockquote>
+            <cite>– Gianna L.</cite>
+            <div class="source-badge google">Google Review</div>
+        </div>
+    </div>
+
+    <div class="testimonial-controls">
+        <button onclick="prevTestimonial()">‹</button>
+        <button onclick="nextTestimonial()">›</button>
+    </div>
+    
+  </section>
+
+  <div class="mobile-cta">
+    <a href="tel:1234567890">Call Now</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Find Us</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Restaurant Name. All rights reserved.
+  </footer>
+  <script>
+    const hour = new Date().getHours();
+    const statusText = document.querySelector('.open-status');
+    if (hour >= 11 && hour < 21) {
+        statusText.textContent = 'Open Now - Closes at 9:00 PM';
+    } else {
+        statusText.textContent = 'Closed - Opens at 11:00 AM';
+    }
+
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+
+    function showTestimonial(index) {
+        testimonials.forEach((t, i) => {
+            t.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextTestimonial() {
+        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+        showTestimonial(currentTestimonial);
+    }
+
+    function prevTestimonial() {
+        currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(currentTestimonial);
+    }
+
+    setInterval(nextTestimonial, 7000);
+    
+    fetch('menu.json')
+    .then(res => res.json())
+    .then(data => {
+      const categories = {
+        "Entrees": document.querySelector('#entrees'),
+        "Starters": document.querySelector('#starters'),
+        "Drinks & Desserts": document.querySelector('#drinks-desserts')
+      };
+
+      data.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+        ${item.image ? `<img src="${item.image}" loading="lazy" alt="${item.name}" style="width: 100px; height: auto; object-fit: cover; margin-right: 10px; border-radius: 4px;">` : ''}
+        <strong>${item.name}</strong> - ${item.description} <span>${item.price || ''}</span>`;
+        if (categories[item.category]) {
+          categories[item.category].appendChild(li);
+        }
+      });
+    });
+
+    
+  </script>
+</body>
+</html>

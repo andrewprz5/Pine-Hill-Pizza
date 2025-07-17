@@ -1,0 +1,29 @@
+[
+  {
+    "category": "Entrees",
+    "name": "Margherita Pizza",
+    "description": "Classic tomato + mozzarella",
+    "price": "$12.99",
+    "image": "images/margherita-pizza.jpg"
+  },
+  {
+    "category": "Entrees",
+    "name": "Pasta Alfredo",
+    "description": "Creamy parmesan sauce",
+    "price": "$10.99",
+    "image": "images/pasta-alfredo.jpg"
+  },
+  {
+    "category": "Drinks & Desserts",
+    "name": "Tiramisu",
+    "description": "Coffee-flavored dessert",
+    "price": "$5.99",
+    "image": "images/tiramisu.jpg"
+  },
+  {
+    "category": "Drinks & Desserts",
+    "name": "Coke",
+    "description": "12oz can",
+    "price": "$1.99"
+  }
+]
