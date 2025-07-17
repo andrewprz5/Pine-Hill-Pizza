@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pine Hill Pizza</title> <!-- Title for the restaurant -->
+    <title>Pine Hill Pizza & Grill</title> <!-- Title for the restaurant -->
     <meta name="description" content="Authentic Italian comfort food in Hawthorne, NJ. Family-owned since 1995. Handmade pastas, wood-fired pizzas, and warm hospitality.">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
@@ -20,17 +20,18 @@
 
     body {
       font-family: 'Quicksand', sans-serif;
-      color: #333;
+      color: #212121;
       line-height: 1.6;
-      background-color: #fff;
+      background-color: #ffffff;
     }
 
     h1, h2, h3 {
-        font-family: 'Pacifico', cursive;;
+        font-family: 'Pacifico', cursive;
+        color: #c62828;
     }
-
+    
     a {
-      color: #c59d5f;
+      color: #c62828;
       text-decoration: none;
     }
     a:hover {
@@ -38,7 +39,7 @@
     }
 
     header {
-      background: url('images/pine-hill-storefront.jpg') no-repeat center top/cover;
+      background: url('images/pine-hill-erial-rd.webp') no-repeat center 40%/cover;
       height: 100vh;
       color: white;
       position: relative;
@@ -78,8 +79,8 @@
     }
     
     .btn {
-      background-color: #c59d5f;
-      color: black;
+      background-color: #c62828;
+      color: #ffffff;
       padding: 0.75rem 1.5rem;
       border-radius: 5px;
       font-weight: bold;
@@ -87,8 +88,13 @@
       text-decoration: none;
     }
 
+    a.btn:hover,
+    .mobile-cta a:hover {
+      opacity: 0.85;
+    }
+
     .btn:hover {
-      background-color: #b4884c;
+      background-color: #b71c1c;
     }
 
     a:hover {
@@ -110,7 +116,7 @@
       font-size: 2rem;
       margin-bottom: 1rem;
       text-align: center;
-      color: #c59d5f;
+      color: #b71c1c;
     }
 
     #about {
@@ -119,7 +125,7 @@
         align-items: center;
         gap: 2rem;
         padding: 3rem 20px;
-        background-color: #fff7f0;
+        background-color: #ffebee;
         max-width: 1000px;
         margin: auto;
     }
@@ -135,7 +141,7 @@
     #about p {
       font-size: 1.05rem;
       line-height: 1.6;
-      color: #444;
+      color: #212121;
       margin-bottom: 1rem;
       text-align: center;
     }
@@ -193,7 +199,7 @@
       font-size: 1.5rem;
       margin-bottom: 1rem;
       color: #444;
-      border-bottom: 2px solid #c59d5f;
+      border-bottom: 2px solid #e0e0e0;
       padding-bottom: 0.5rem;
     }
 
@@ -234,7 +240,7 @@
     }
 
     .best-seller {
-      color: #c59d5f;
+      color: #b71c1c;
       font-style: italic;
       font-weight: 600;
       margin-left: 6px;
@@ -250,8 +256,7 @@
       color: #555;
     }
     #contact .btn {
-      background-color: #c59d5f;
-      color: black;
+      background-color: #c62828;
       padding: 0.75rem 1.5rem;
       border-radius: 5px;
       font-weight: bold;
@@ -261,16 +266,16 @@
       text-decoration: none;
     }
     #contact .btn:hover {
-      background-color: #b4884c;
+      background-color: #b71c1c;
     }
 
     .map-container {
         max-width: 600px;
-        margin: 0 auto;
+        margin: 2rem auto;
     }
 
     #testimonials {
-        background-color: #fff7f0;
+        background-color: #ffebee;
         padding: 3rem 20px;
         text-align: center;
         position: relative;
@@ -291,7 +296,7 @@
         display: none;
         padding: 1.5rem;
         background-color: #fff;
-        border-left: 4px solid #c59d5f;
+        border-left: 4px solid #c62828;
         box-shadow: 0 2px 6px rgba(0,0,0,0.05);
         border-radius: 8px;
         transition: opacity 0.3s ease-in-out;
@@ -370,14 +375,14 @@
         z-index: 1000;
         display: flex;
         justify-content: space-around;
-        background-color: #c59d5f;
+        background-color: #c62828;
         padding: 0.75rem 1rem;
-        border-top: 1px solid #b4884c;
+        border-top: 1px solid #b71c1c;
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     }
 
     .mobile-cta a {
-        color: black;
+        color: white;
         font-size: 1rem;
         font-weight: bold;
         text-decoration: none;
@@ -421,7 +426,7 @@
 <body>
     <header>
     <h1>Serving Pine Hill Since '01 – The Pizza You Remember</h1>
-    <p>Locally owned and operated for 24 years, Pine Hill Pizza is your neighborhood go-to for old-school, top-notch pizza.</p>
+    <p>Locally owned and operated for 24 years, Pine Hill Pizza & Grill is your neighborhood go-to for old-school, top-notch pizza.</p>
     <div class="hero-buttons">
         <a href="#menu" class="btn">See Our Menu</a>
         <a href="https://slicelife.com/restaurants/nj/pine-hill/08021/pine-hill-pizza-grill-pine-hill/menu" class="btn">Order Online</a>
@@ -431,6 +436,10 @@
 
   <section class="menu-column" id="menu">
     <h2>Our Menu</h2>
+    <p class="disclaimer">
+      *Please note: Customizations such as extra toppings, sauces, and special requests  
+      are available only on our <a href="https://slicelife.com/restaurants/nj/pine-hill/08021/pine-hill-pizza-grill-pine-hill/menu" target="_blank">Slice ordering page</a> or by phone.
+    </p>
     <div class="menu-category">
         <h3>Specials</h3>
         <ul id="specials">
@@ -439,8 +448,7 @@
     </div>
     <div class="menu-category">
         <h3>Build Your Own Pizza</h3>
-        <h4>Customize your own pizza on Slice with your favorite toppings.</h4>
-        <a href="https://slicelife.com/restaurants/nj/pine-hill/08021/pine-hill-pizza-grill-pine-hill/menu" target="_blank" class="btn">Order on Slice</a>
+        <em>Customize toppings and extras on our <a href="https://slicelife.com/restaurants/nj/pine-hill/08021/pine-hill-pizza-grill-pine-hill/menu" target="_blank">Slice ordering page</a> or call us. </em>
         <ul id="pizza">
 
         </ul>
@@ -533,30 +541,32 @@
 
         </ul>
     </div>
-    <a href="tel:1234567890" class="btn">Call Now to Order</a>
+    <a href="https://slicelife.com/restaurants/nj/pine-hill/08021/pine-hill-pizza-grill-pine-hill/menu" target="_blank" class="order-btn">Order Online via Slice</a>
+    <p>Or call us at <a href="tel:18564351200">(856) 435-1200</a> to order directly.</p>
+    <!-- 
     <p class="menu-note">
         View our full menu <a href="menu.pdf" target="_blank">here</a> or ask in-store for daily specials.
-    </p>
+    </p> -->
   </section>
 
   <section id="about">
     <div class="about-content">
         <h2>About Us</h2>
-        <p>
-            We’re a family-owned Italian restaurant serving Hawthorne since 1995. Our recipes are passed down through generations and made fresh daily. Whether you’re here for a casual night out or celebrating something special, we make you feel at home.
-        </p>
-        <p>
-            Every dish is made from scratch with fresh, high-quality ingredients — the same way Nonna used to cook. Whether you're dining in, picking up, or ordering for a celebration, we treat every guest like family.
-        </p>
+        <p>Pine Hill Pizza & Grill has been serving the best pizza, steaks, and wings in the area for 24 years. Located in Pine Hill, we’ve been recognized multiple times with the “Best of South Jersey” award.</p>
+
+        <p>We make our dough fresh daily to ensure consistent quality and great taste every time you order. Whether you dine in or want delivery, we serve Pine Hill, Erial, and parts of Sicklerville and Berlin.</p>
+
+        <p>Along with pizza and steaks, our menu includes Tarantini panzerotti, salads, soups, wings, hoagies, sandwiches, burgers, wraps, stromboli, and calzones. Stop by or call us today!</p>
+      <!-- 
         <blockquote>
         “Good food brings people together — and that’s what we’re here for.”<br>
         <span class="quote-author">– Salvatore, Owner & Chef</span>
-        </blockquote>
+        </blockquote> -->
     </div>
     
     <!-- Optional: Photo of Owner or Restaurant -->
     <div class="about-image">
-        <img src="images/restaurant-owner.jpg" alt="Our Owner [Name]" loading="lazy">
+        <img src="images/oven-pizza.jpg" alt="Our Owner [Name]" loading="lazy">
     </div>
   </section>
 
@@ -564,53 +574,32 @@
     <h2>Contact & Hours</h2>
     <p>
         <strong>Address:</strong>
-        123 Main Street, Hawthorne, NJ <br/>
-        <a href="https://maps.google.com" target="_blank">Get Directions</a>
+        561 Erial Rd, Pine Hill, NJ 08021 <br/>
+        <a href="https://www.google.com/maps/place/Pine+Hill+Pizza/@39.788175,-74.990353,16z/data=!4m6!3m5!1s0x89c6d3ec5a1631b1:0xfc6db866df933192!8m2!3d39.7881746!4d-74.9903531!16s%2Fg%2F11yb1z4qfj?hl=en&entry=ttu&g_ep=EgoyMDI1MDcxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Get Directions</a>
     </p>
     <p>
         <strong>Phone:</strong>
-        <a href="tel:1234567890">(123) 456-7890</a>
+        <a href="tel:18564351200">(856) 435-1200</a>
     </p>
     <p>
         <strong>Open Daily:</strong>
         11:00 AM - 9:00 PM
     </p>
-    <a href="tel:1234567890" class="btn">Call Now to Order</a>
-
+    <div class="hero-buttons">
+      <a href="https://slicelife.com/restaurants/nj/pine-hill/08021/pine-hill-pizza-grill-pine-hill/menu" class="btn">Order Online</a>
+      <a href="tel:18564351200" class="btn">Call Now to Order</a>
+    </div>
+    
     <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.8052695235425!2d-74.15700099999999!3d40.949246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c303b4a0ef3bcb%3A0xf8c09b10d1b709f5!2sHawthorne%2C%20NJ%2007506%2C%20USA!5e0!3m2!1sen!2sus!4v1721040000000!5m2!1sen!2sus" 
-        width="100%" height="300" style="border:0; margin-top: 2rem; border-radius: 8px;"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.8387217289965!2d-74.9903531!3d39.7881746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6d3ec5a1631b1%3A0xfc6db866df933192!2sPine%20Hill%20Pizza!5e0!3m2!1sen!2sus!4v1752781419154!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
 
   <section id="testimonials">
     <h2>What Our Customers Say</h2>
-    <div class="testimonial-carousel">
-        <div class="testimonial active">
-            <img src="star-rating.svg" alt="5 stars" class="stars">
-            <blockquote>“Amazing food and super friendly staff. The best Italian in the area!”</blockquote>
-            <cite>– Sarah J.</cite>
-            <div class="source-badge google">Google Review</div>
-        </div>
-        <div class="testimonial">
-            <img src="star-rating.svg" alt="5 stars" class="stars">
-            <blockquote>“Their tiramisu is to die for. I order it every time.”</blockquote>
-            <cite>- Mark T.</cite>
-            <div class="source-badge">Yelp</div>
-        </div>
-        <div class="testimonial">
-            <img src="star-rating.svg" alt="5 stars" class="stars">
-            <blockquote>“Cozy, authentic, and the pizza is next level. Reminds me of home in Naples.”</blockquote>
-            <cite>– Gianna L.</cite>
-            <div class="source-badge google">Google Review</div>
-        </div>
-    </div>
-
-    <div class="testimonial-controls">
-        <button onclick="prevTestimonial()">‹</button>
-        <button onclick="nextTestimonial()">›</button>
-    </div>
+    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-396fb921-52fd-474e-a215-4cf337f5fd4d" data-elfsight-app-lazy></div>
     
   </section>
 
@@ -621,7 +610,7 @@
   </div>
 
   <footer>
-    &copy; 2025 Restaurant Name. All rights reserved.
+    &copy; 2025 Pine Hill Pizza & Grill. All rights reserved.
   </footer>
   <script>
     const now = new Date();
@@ -681,9 +670,10 @@
     .then(data => {
       const categories = {
         "Specials": document.querySelector('#specials'),
-        "Build Your Own Pizza": document.querySelector('#pizza'),
+        "BYO Pizza": document.querySelector('#pizza'),
         "Specialty Pizzas": document.querySelector('#specialty-pizzas'),
         "Appetizers": document.querySelector('#apps'),
+        "Salads": document.querySelector('#salads'),
         "Jumbo Wings": document.querySelector('#wings'),
         "Hot Sandwiches": document.querySelector('#hot-sandwiches'),
         "Club Sandwiches": document.querySelector('#club-sandwiches'),
