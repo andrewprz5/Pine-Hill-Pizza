@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Name</title>
+    <title>Pine Hill Pizza</title> <!-- Title for the restaurant -->
+    <meta name="description" content="Authentic Italian comfort food in Hawthorne, NJ. Family-owned since 1995. Handmade pastas, wood-fired pizzas, and warm hospitality.">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
      <style>
-    /* Reset */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -17,14 +19,14 @@
     }
 
     body {
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Quicksand', sans-serif;
       color: #333;
       line-height: 1.6;
       background-color: #fff;
     }
 
     h1, h2, h3 {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Pacifico', cursive;;
     }
 
     a {
@@ -36,7 +38,7 @@
     }
 
     header {
-      background: url('images/fast-woodfired-pizza.jpg') no-repeat center center/cover;
+      background: url('images/pine-hill-storefront.jpg') no-repeat center top/cover;
       height: 100vh;
       color: white;
       position: relative;
@@ -227,6 +229,17 @@
         margin-top: 2rem;
     }
 
+    .menu-item-text {
+      flex: 1;
+    }
+
+    .best-seller {
+      color: #c59d5f;
+      font-style: italic;
+      font-weight: 600;
+      margin-left: 6px;
+    }
+
     #contact {
       text-align: center;
       padding: 3rem 20px;
@@ -407,11 +420,11 @@
 </head>
 <body>
     <header>
-    <h1>Authentic Italian Comfort Food in Hawthorne, NJ</h1>
-    <p>Family-owned since 1995. Handmade pastas, wood-fired pizzas, and warm hospitality.</p>
+    <h1>Serving Pine Hill Since '01 – The Pizza You Remember</h1>
+    <p>Locally owned and operated for 24 years, Pine Hill Pizza is your neighborhood go-to for old-school, top-notch pizza.</p>
     <div class="hero-buttons">
         <a href="#menu" class="btn">See Our Menu</a>
-        <a href="tel:1234567890" class="btn">Call to Order/Reserve</a>
+        <a href="https://slicelife.com/restaurants/nj/pine-hill/08021/pine-hill-pizza-grill-pine-hill/menu" class="btn">Order Online</a>
     </div>
     <p class="open-status">Open Now - Closes at 9:00 PM</p>
   </header>
@@ -419,20 +432,104 @@
   <section class="menu-column" id="menu">
     <h2>Our Menu</h2>
     <div class="menu-category">
-        <h3>Starters</h3>
-        <ul id="starters">
+        <h3>Specials</h3>
+        <ul id="specials">
 
         </ul>
     </div>
     <div class="menu-category">
-        <h3>Entrees</h3>
-        <ul id="entrees">
+        <h3>Build Your Own Pizza</h3>
+        <h4>Customize your own pizza on Slice with your favorite toppings.</h4>
+        <a href="https://slicelife.com/restaurants/nj/pine-hill/08021/pine-hill-pizza-grill-pine-hill/menu" target="_blank" class="btn">Order on Slice</a>
+        <ul id="pizza">
 
         </ul>
     </div>
     <div class="menu-category">
-        <h3>Drinks & Desserts</h3>
-        <ul id="drinks-desserts">
+        <h3>Specialty Pizzas</h3>
+        <ul id="specialty-pizzas">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Appetizers</h3>
+        <ul id="apps">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Salads</h3>
+        <ul id="salads">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Jumbo Wings</h3>
+        <ul id="wings">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Hot Sandwiches</h3>
+        <ul id="hot-sandwiches">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Club Sandwiches</h3>
+        <h4>Served with chips.</h4>
+        <ul id="club-sandwiches">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Hoagies</h3>
+        <ul id="hoagies">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Pizza Turnover</h3>
+        <ul id="pizza-turnover">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Chicken Steaks</h3>
+        <h4>Our steaks are 25% bigger than our competitors!</h4>
+        <ul id="chicken-steaks">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Cheese Steaks</h3>
+        <h4>Our steaks are 25% bigger than our competitors!</h4>
+        <ul id="cheese-steaks">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Burgers</h3>
+        <ul id="burgers">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Wraps</h3>
+        <h4>Served with chips.</h4>
+        <ul id="wraps">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Calzones & Strombolis</h3>
+        <ul id="calzones-strombolis">
+
+        </ul>
+    </div>
+    <div class="menu-category">
+        <h3>Beverages</h3>
+        <ul id="beverages">
 
         </ul>
     </div>
@@ -527,12 +624,35 @@
     &copy; 2025 Restaurant Name. All rights reserved.
   </footer>
   <script>
-    const hour = new Date().getHours();
+    const now = new Date();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const day = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
     const statusText = document.querySelector('.open-status');
-    if (hour >= 11 && hour < 21) {
-        statusText.textContent = 'Open Now - Closes at 9:00 PM';
+
+    let openHour, openMinute, closeHour, closeMinute;
+
+    // Set hours based on day
+    if (day === 0) { // Sunday
+        openHour = 12;
+        openMinute = 0;
     } else {
-        statusText.textContent = 'Closed - Opens at 11:00 AM';
+        openHour = 11;
+        openMinute = 0;
+    }
+    closeHour = 20;
+    closeMinute = 30;
+
+    // Check if current time is within open hours
+    const isOpen =
+        (hour > openHour || (hour === openHour && minute >= openMinute)) &&
+        (hour < closeHour || (hour === closeHour && minute <= closeMinute));
+
+    if (isOpen) {
+        statusText.textContent = 'Open Now – Closes at 8:30 PM';
+    } else {
+        const nextOpen = day === 6 ? 'Sunday at 12:00 PM' : '11:00 AM';
+        statusText.textContent = `Closed – Opens at ${nextOpen}`;
     }
 
     let currentTestimonial = 0;
@@ -560,19 +680,42 @@
     .then(res => res.json())
     .then(data => {
       const categories = {
-        "Entrees": document.querySelector('#entrees'),
-        "Starters": document.querySelector('#starters'),
-        "Drinks & Desserts": document.querySelector('#drinks-desserts')
+        "Specials": document.querySelector('#specials'),
+        "Build Your Own Pizza": document.querySelector('#pizza'),
+        "Specialty Pizzas": document.querySelector('#specialty-pizzas'),
+        "Appetizers": document.querySelector('#apps'),
+        "Jumbo Wings": document.querySelector('#wings'),
+        "Hot Sandwiches": document.querySelector('#hot-sandwiches'),
+        "Club Sandwiches": document.querySelector('#club-sandwiches'),
+        "Hoagies": document.querySelector('#hoagies'),
+        "Pizza Turnover": document.querySelector('#pizza-turnover'),
+        "Chicken Steaks": document.querySelector('#chicken-steaks'),
+        "Cheese Steaks": document.querySelector('#cheese-steaks'),
+        "Burgers": document.querySelector('#burgers'),
+        "Wraps": document.querySelector('#wraps'),
+        "Calzones & Strombolis": document.querySelector('#calzones-strombolis'),
+        "Beverages": document.querySelector('#beverages'),
       };
 
       data.forEach(item => {
+        if (!categories[item.category]) {
+          console.warn(`Category "${item.category}" not found for item:`, item);
+          return;
+        }
+
         const li = document.createElement('li');
+        const labelHTML = item.bestSeller ? `<em class="best-seller">Best seller</em>` : '';
+        
         li.innerHTML = `
         ${item.image ? `<img src="${item.image}" loading="lazy" alt="${item.name}" style="width: 100px; height: auto; object-fit: cover; margin-right: 10px; border-radius: 4px;">` : ''}
-        <strong>${item.name}</strong> - ${item.description} <span>${item.price || ''}</span>`;
-        if (categories[item.category]) {
-          categories[item.category].appendChild(li);
-        }
+        <div class="menu-item-text">
+          <strong>${item.name} ${labelHTML}</strong>
+          ${item.description ? `<p>${item.description}</p>` : ''}
+        </div>
+        <span class="price">${item.price || ''}</span>
+        `;
+        categories[item.category].appendChild(li);
+
       });
     });
 
